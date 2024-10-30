@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+# Product Management Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend of a full-stack product management application. It is built with **React** and styled using **Tailwind CSS** to provide an attractive, intuitive user interface. The app allows users to view, add, edit, delete, and manage product availability by connecting to a REST API backend deployed in another domain.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User-Friendly Interface**: Built with **React** and **Tailwind CSS** for a clean and responsive design.
+- **CRUD Functionality**: Full Create, Read, Update, Delete (CRUD) functionality for managing products visually.
+- **API Integration**: Communicates with a REST API backend to handle product data efficiently.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React** - JavaScript library for building user interfaces.
+- **Tailwind CSS** - Utility-first CSS framework for styling.
+- **Vercel** - Platform used for deploying the frontend.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/product-management-frontend.git
+   cd product-management-frontend
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Environment Variables:** Create a .env file in the root directory and add the following:
+   ```plaintext
+   VITE_API_URL=https://rest-api-product-management.onrender.com
+   ```
+4. **Run the App:**
+   ```bash
+   npm run dev
+   ```
+The app will be available at `http://localhost:5173` by default.
+   
+## Deployment
+The frontend is deployed on Vercel for production, ensuring scalability and high availability.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Product Management:** Users can create, view, edit, and delete products.
+- **Availability Toggle:** A patch endpoint allows toggling product availability, making it easy to manage stock visibility.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Future Enhancements
+
+- **User Authentication:** Add user accounts to secure product management.
+- **Enhanced Filtering:** Add filters and search functionality to streamline product views.
+- **Improved UX/UI:** Expand styles and add animations for a smoother user experience.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+**Note:** For backend setup and API documentation, refer to the [REST API repository](https://github.com/Thomas465xd/rest_api-product-management).
+
+---
+
+**Made with ♥️ Thomas Schrödinger**
