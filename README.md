@@ -2,6 +2,15 @@
 
 This is the frontend of a full-stack product management application. It is built with **React** and styled using **Tailwind CSS** to provide an attractive, intuitive user interface. The app allows users to view, add, edit, delete, and manage product availability by connecting to a REST API backend deployed in another domain.
 
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
+
 ## Features
 
 - **User-Friendly Interface**: Built with **React** and **Tailwind CSS** for a clean and responsive design.
